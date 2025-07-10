@@ -1,0 +1,159 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    background-color: #8ED968; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .backed-by {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: #222; /* Darker text for better readability */
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Soft outline */
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item:hover {
+    color: #ff6347; /* Highlight color on hover */
+  }
+  
+  /* Dropdown Menu */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-toggle {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #222;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    list-style: none;
+    padding: 0px 0;
+    min-width: 150px;
+    z-index: 1000;
+  }
+  
+  .dropdown-menu li {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .dropdown-menu li a {
+    text-decoration: none;
+    color: #222;
+    display: block;
+    padding: 8px 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-menu li a:hover {
+    background-color: #f4f4f4;
+  }
+  
+  /* Nav Buttons */
+  .nav-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search-btn,
+  .login-btn {
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-btn {
+    background: rgb(14, 14, 14);
+    color: rgb(255, 255, 255);
+  }
+  
+  .login-btn {
+    background: black;
+    color: white;
+  }
+  
+  .search-btn:hover {
+    background: #e5e500; /* Darker yellow on hover */
+  }
+  
+  .login-btn:hover {
+    background: #333; /* Darker black on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .navbar-left {
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .nav-buttons {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    .dropdown-menu {
+      position: static;
+      box-shadow: none;
+      background: transparent;
+    }
+  }

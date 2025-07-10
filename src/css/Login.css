@@ -1,0 +1,232 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+
+.login-title {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.country-code {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+
+.mobile-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  font-size: 1rem;
+}
+
+.mobile-input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.otp-button, .whatsapp-button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.otp-button {
+  background-color: #4a90e2;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.otp-button:hover {
+  background-color: #3a7bc8;
+}
+
+.otp-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.whatsapp-button {
+  background-color: #25D366;
+  color: white;
+}
+
+.whatsapp-button:hover {
+  background-color: #1da851;
+}
+
+.whatsapp-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  color: #777;
+}
+
+.divider::before, .divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.divider::before {
+  margin-right: 1rem;
+}
+
+.divider::after {
+  margin-left: 1rem;
+}
+
+.signup-link {
+  margin-top: 1.5rem;
+  color: #777;
+}
+
+.signup-link a {
+  color: #4a90e2;
+  text-decoration: none;
+  margin-left: 0.5rem;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Previous styles remain the same, add these new styles at the bottom */
+
+.mobile-number-display {
+  margin: 1rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.otp-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  letter-spacing: 0.5rem;
+}
+
+.otp-input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.resend-otp {
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.resend-button {
+  background: none;
+  border: none;
+  color: #4a90e2;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+.resend-button:hover {
+  text-decoration: underline;
+}
+
+.verify-button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.verify-button:hover {
+  background-color: #3a7bc8;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #4a90e2;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 1rem;
+}
+
+.signup-button:hover {
+  background-color: #3e8e41;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: #4a90e2;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+}
